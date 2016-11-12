@@ -1,0 +1,443 @@
+ @font-face {
+     font-family: "Avenir-Medium";
+     src: url("/assets/fonts/Avenir-Medium.woff");
+ }
+ 
+ .header {
+     padding: 1em 0;
+     background: #ccc
+ }
+ 
+ .col {
+     padding: 1em 0;
+     text-align: center;
+ }
+ 
+ #navBar {
+     height: 80px;
+     position: fixed;
+     width: 100%;
+     z-index: 1;
+     justify-content: center;
+ }
+ 
+ .navlist {
+     position: relative;
+     left: 20%;
+ }
+ 
+ nav ul a:hover {
+     width: 200px;
+     font-size: 30px;
+     color: blue;
+ }
+ 
+ html {
+     overflow-y: scroll;
+ }
+ 
+ #contactPage {
+     font-size: 20px;
+     color: blue;
+     background-color: white;
+     text-align: center;
+ }
+ 
+ #contact {
+     font-size: 18px;
+ }
+ 
+ #name {
+     font-size: 40px;
+     margin-left: 15px;
+     text-align: center;
+ }
+ 
+ #img {
+     width: 100%;
+ }
+ 
+ .imagewelcome {
+     background-image: url('/assets/images/depotu.jpg');
+     background-repeat: no-repeat;
+     background-position-x: center;
+     background-size: cover;
+     position: fixed;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     min-height: 100%;
+ }
+ 
+ #boxholder {
+     padding-top: 15px;
+     padding-left: 15px;
+     padding-right: 15px;
+     padding-bottom: 15px;
+ }
+ 
+ .circles {
+     padding-right: 30px;
+     color: darkgray;
+ }
+ 
+ .picdiv {
+     width: 100%;
+     height: 40%;
+ }
+ 
+ .buynow {
+     width: 100%;
+     height: 40%;
+     background-color: rgba(0, 0, 0, 0.8);
+     border-top-left-radius: 8px;
+ }
+ 
+ .selectdiv {
+     margin-top: -0px;
+     width: 94%;
+     height: 60%;
+     background-color: white;
+     border-bottom-left-radius: 8px;
+     color: gray;
+ }
+ 
+ #box {
+     font-family: "Avenir-Medium";
+     color: grey;
+     width: 270px;
+     height: 405px;
+     float: left;
+     margin: 20px;
+     border-radius: 8px;
+     position: relative;
+ }
+ 
+ .newbox {
+     position: absolute;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-bottom-right-radius: 8px;
+     border-bottom-left-radius: 8px;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+ }
+ 
+ #left {
+     display: block;
+     margin-top: -25px;
+     margin-bottom: 20px;
+     float: left;
+ }
+ 
+ #right {
+     margin-top: -25px;
+     display: block;
+     float: right;
+ }
+ 
+ .productface {
+     font-family: "Avenir-Medium";
+ }
+ 
+ .ptitle {
+     font-family: "Avenir-Medium";
+     margin-top: 37px;
+ }
+ 
+ .pprice {
+     font-weight: bold;
+     float: right;
+     margin-top: 45px;
+     color: cornflowerblue;
+ }
+ 
+ .pdescription {
+     font-family: "Avenir-Medium";
+     font-size: .75em;
+     color: darkgray;
+ }
+ 
+ .description {
+     padding: 5%;
+ }
+ 
+ .dropdown {
+     width: 100%;
+     height: 10%;
+ }
+ 
+ #buybtn {
+     font-family: "Avenir-Medium";
+     font-size: 1em;
+     color: white;
+     margin-left: auto;
+     margin-right: auto;
+     width: 60%;
+     border: 3px solid white;
+     opacity: 100;
+     padding: 10px;
+     border-radius: 10px;
+ }
+ 
+ #icon {
+     background: red;
+     color: white;
+ }
+ 
+ #icondiv {
+     float: right;
+     margin-top: -0.5em;
+     margin-right: -1em;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-bottom-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+ }
+ 
+ #size {
+     margin-right: 20px;
+ }
+ 
+ .productfacenew {
+     font-family: "Avenir-Medium";
+     font-size: 0.75em;
+ }
+ 
+ .row .col.s12 {
+     bottom: 29px;
+ }
+ 
+ #quantity {
+     font-size: .75em;
+     border: 2.5px solid gray;
+     border-radius: 5px;
+     margin-bottom: 40px;
+     margin-top: -5px;
+     text-align: center;
+     margin-left: 35%;
+     width: 12%;
+     height: 5%;
+     color: darkgray;
+ }
+ 
+ .quantity {
+     margin: 0px;
+     font-family: "Avenir-Medium";
+     padding: 10px;
+     color: darkgray;
+ }
+ 
+ @import url('http://fonts.googleapis.com/css?family=Raleway:400,200');
+ body {
+     font-family: Helvetica, san-serif;
+     background: whitesmoke;
+     /*background-image: url('/PNG/1439.jpg');*/
+ }
+ 
+ nav ul a {
+     font-size: 1rem;
+     color: #fff;
+     display: block;
+     padding: 0 15px;
+     cursor: pointer;
+     height: 80px;
+     width: 80px;
+     text-align: center;
+ }
+ 
+ #footimage {
+     height: 62px;
+     top: -14px;
+     position: relative;
+     right: -43px;
+ }
+ 
+ #face {
+     height: 25px;
+     top: 24px;
+     position: relative;
+     right: -6px;
+ }
+ 
+ #insta {
+     height: 40px;
+     position: relative;
+     right: 17px;
+     top: 34px;
+ }
+ 
+ #link {
+     height: 53px;
+     position: relative;
+     top: 40px;
+     right: -12px;
+ }
+ 
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ 
+ main {
+     flex: 1 0 auto;
+ }
+ 
+ footer.page-footer {
+     margin-top: 20px;
+     padding-top: 20px;
+     z-index: -1;
+     height: 130px
+ }
+ 
+ @import url(http://fonts.googleapis.com/css?family=Ubuntu:700);
+ .illusion {
+     left: 0;
+     line-height: 139px;
+     margin: auto;
+     margin-top: -27px;
+     position: fixed;
+     top: 26%;
+     left: 43px;
+     width: 100%;
+     text-align: center;
+     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+     font-size: 4em;
+     color: white;
+     -webkit-text-shadow: 5px 5px 0 #000;
+     -moz-text-shadow: 5px 5px 0 #000;
+     -o-text-shadow: 5px 5px 0 #000;
+     -ms-text-shadow: 5px 5px 0 #000;
+     text-shadow: 5px 5px 0 #000;
+ }
+ 
+ @media only screen and (max-width: 480px) {
+     .illusion {
+         display: none;
+     }
+ }
+ 
+ @media only screen and (max-width: 480px) {
+     #illusion {
+         left: 0;
+         line-height: 30px;
+         margin: auto;
+         margin-top: 57px;
+         position: relative;
+         top: 42%;
+         width: 100%;
+         text-align: center;
+         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+         font-size: 27px;
+         color: black;
+         z-index: 99;
+     }
+ }
+ 
+ #wholepage {
+     width: 97%;
+     position: relative;
+     left: 20px;
+ }
+ 
+ #info {
+     position: relative;
+     top: -31px;
+     right: -103px;
+ }
+ 
+ .col {
+     z-index: 0;
+ }
+ 
+ #ckimg {
+     background-size: contain;
+     background-position: center;
+     height: 78px;
+     width: 100px;
+ }
+ 
+ #salecard {
+     height: 39px;
+ }
+ 
+ .collapsible {
+     margin-left: 811px;
+     margin-right: 50px;
+ }
+ 
+ .collapsible-header {
+     text-align: center;
+ }
+ 
+ .collapsible.popout>li.active {
+     margin: 11px 20px;
+ }
+ 
+ .yourtotal {
+     z-index: 0;
+ }
+ 
+ .section {
+     right: 3px;
+ }
+ 
+ .checkoutdetails {
+     color: red;
+ }
+ 
+ #email {
+     border: 1px;
+ }
+ 
+ .checkouttable {
+     background-color: white;
+ }
+ 
+ .ccdetails {
+     border: 1px;
+     height: 200px;
+ }
+ 
+ .ccinfo {
+     border: 2px;
+     height: 200px;
+     line-height: 13;
+ }
+ 
+ #ccreveal {
+     z-index: 0;
+ }
+ 
+ #continueshopping {
+     color: white;
+     z-index: 0;
+ }
+ 
+ @media screen and (max-width: 991px) {
+     .sidenavbar {
+         position: fixed;
+         top: -3px;
+         text-align: center;
+         width: 100px;
+         height: 219px;
+         z-index: 2;
+         color: white;
+     }
+ }
+ 
+ @media screen and (min-width: 992px) {
+     .sidenavbar {
+         display: none;
+     }
+ }
+ 
+ .modal .modal-content {
+     padding: 88px;
+     font-size: x-large;
+     text-align: center;
+     background-color: black;
+ }

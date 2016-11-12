@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://tunein.com/embed/player/s190804/ -->
+<html xmlns:fb="http://www.facebook.com/2008/fbml" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>TuneIn Radio</title>
+
+
+
+<script type="text/javascript">
+  var APP_PATH = "/",
+      SECURE_PATH = "https://tunein.com/",
+      BASE_URL = "http://tunein.com",
+      IS_MOBILE = false,
+      IS_AUTHENTICATED = false,
+      RadioTime = {},
+      TuneIn = {};
+
+  TuneIn.loggingDisabled = false;
+  TuneIn.cookieEnabled = navigator.cookieEnabled;
+
+  // Simple user agent test for a mobile browser.  Inspired by: https://developer.mozilla.org/en-US/docs/Browser_detection_using_the_user_agent
+  TuneIn.isMobileBrowser = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Kindle|Opera Mini/i.test(navigator.userAgent);
+
+  if (!document.cookie && typeof TuneIn.cookieEnabled === 'undefined') {
+    document.cookie = 'testcookie';
+    TuneIn.cookieEnabled = document.cookie.indexOf('testcookie') !== -1;
+    document.cookie = '';
+  }
+
+
+  TuneIn.currentUser = {"isInSubscriptionLocale":true,"isEligibleForPremiumAccess":true,"isAnonymous":true,"username":null};
+  TuneIn.GOOGLE_API_KEY = 'AIzaSyCZmf25GlY26sQVgpWOTDMb_WKJs6pYp9s';
+  TuneIn.GOOGLE_CLIENT_ID = '963286039532-lhv06u6u10c92n89oir5sfn57389grd8.apps.googleusercontent.com';
+  TuneIn.USER_TRACKING_ID_NAME = 'rtid';
+  TuneIn.sessionTrackingIdName = 'rts';
+  TuneIn.jsPath = "http://cdn-static.tunein.com/201610261643/js/";
+  TuneIn.jPlayerSWFPath = "http://cdn-static.tunein.com/201610261643/js/lib/jPlayer/";
+  TuneIn.jwplayerSWFPath = "http://cdn-static.tunein.com/201610261643/js/lib/jwplayer/jwplayer.flash.swf";
+  TuneIn.Embed = {"Heights":{"station":100,"topic":110,"program":350,"unknown":100},"autoplayParam":"autoplay","minimumAdWidth":595,"minimumAdHeight":280};
+  TuneIn.typeInitials = {"a":"Category","b":"Unknown","c":"Category","d":"Album","e":"Unknown","f":"Unknown","g":"Category","h":"Unknown","i":"AudioClip","j":"Unknown","k":"Unknown","l":"Unknown","m":"Artist","n":"Unknown","o":"Song","p":"Program","q":"Unknown","r":"Category","s":"Station","t":"Topic","u":"User","v":"Unknown","w":"Unknown","x":"Unknown","y":"Unknown","z":"Unknown"};
+  TuneIn.profilePremiumUpsellUrl = '/premium/?source=profile.upsell';
+  TuneIn.premiumUpsellUrl = '/' + 'premium' + '/';
+  TuneIn.premiumBrowseUrl = '/radio/premium/';
+  TuneIn.nowPlayingUrl = 'https://feed.tunein.com/';
+  TuneIn.partnerServiceId = 'qZjjnm85';
+  TuneIn.rtid = '3799206a-53a3-43d9-94f5-568fcaea2188';
+  TuneIn.streamConnectionTime = 0;
+  RadioTime.flashV2Url = "http://cdn-static.tunein.com/201610261643/js/lib/swf/player-AS2.swf";
+  RadioTime.flashV3Url = "http://cdn-static.tunein.com/201610261643/js/lib/swf/player-AS3.swf";
+</script>
+
+
+    <link rel="stylesheet" type="text/css" href="./TuneIn Radio_files/gz.embed-player-bundle.css">
+
+    <script defer="" src="./TuneIn Radio_files/gz.modernizr-2.6.2.min.js"></script>
+
+
+
+  </head> 
+
+  <body class="">
+    <div class="tunein-wrapper " component="EmbedPlayer">
+      <div id="" class="embed-content station-player">
+        <div id="tuner">
+          <div class="tuner-body">
+            <div class="artwork inline">
+              <span class="image"><img src="./TuneIn Radio_files/s190804q.png" alt=""></span>
+            </div>
+
+            <div class="player">
+              <div class="top">
+                <div class="play-wrapper" title="Listen Now">
+                  <div class="action play-button ">
+                    <div class="icon"></div>
+                  </div>
+                </div>
+
+                <div class="titles">
+                  <div class="line1" behavior="scrolling" title="Substrate Radio">Substrate Radio</div>
+                </div>
+                <a href="http://tunein.com/radio/Substrate-Radio-s190804/?utm_source=tiEmbed&amp;utm_medium=referral&amp;utm_content=s190804" target="_blank" class="profile-link">&nbsp;</a>
+              </div>
+
+              <div class="bottom">
+                <div class="share secondary-button" title="Share">
+                  <i class="ti-icon ti-icon-test-share"></i><span class="share-label">Share</span>
+                </div>
+
+                  <a class="download" href="http://go.onelink.me/2775968723?pid=Embed_Download_Button&amp;c=test_1&amp;af_dp=tunein%3A%2F%2Fhome&amp;af_web_dp=http%3A%2F%2Ftunein.com%2Fget-tunein" target="_blank" title="Listen on the free TuneIn Radio app">
+                    <span class="download-label">Get TuneIn</span>
+                  </a>
+
+                <div class="time">
+                  <span class="elapsed"></span> / <span class="duration"></span>
+                </div>
+
+                <a href="http://tunein.com/radio/Substrate-Radio-s190804/?utm_source=tiEmbed&amp;utm_medium=referral&amp;utm_content=s190804" target="_blank" class="tunein-logo" title="Listen on TuneIn"></a>
+                <a href="http://tunein.com/radio/Substrate-Radio-s190804/?utm_source=tiEmbed&amp;utm_medium=referral&amp;utm_content=s190804" target="_blank" class="profile-link">&nbsp;</a>
+              </div>
+            </div>
+
+            <a href="http://tunein.com/radio/Substrate-Radio-s190804/?utm_source=tiEmbed&amp;utm_medium=referral&amp;utm_content=s190804" target="_blank" class="profile-link">&nbsp;</a>
+            <div id="tuneInRadioPlayer"></div>
+          </div>
+
+          <div class="scrubber-cont">
+            <div class="seekbar">
+              <div class="playbar">
+                <div class="scrubber-handle">
+                  <div class="handle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tunein-icon"></div>
+
+    </div>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', "UA-1720788-1", {
+    'cookieDomain': 'auto',
+    'sampleRate': '10'
+  });
+  ga('set', 'dimension1', 'Tunein.com Embed');
+
+</script></body></html>

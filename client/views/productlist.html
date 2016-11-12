@@ -1,0 +1,70 @@
+<br>
+<div>
+    <div id="productbackground">
+        <div id="boxholder">
+            <div id="box" class="card-panel hoverable z-depth-5" ng-repeat="product in productlist">
+                 <!--$scope.productlist = Products.query();-->
+                <div ng-click="toggleDetails(product)">
+                    <div class="picdiv">
+                        <img ng-src='{{ product.imageurl }}' class="picdiv">
+                    </div>
+                    <div>
+                        <div id="left" style="margin-top: -4px;">
+                            <p class="productface ptitle">{{ product.title }}</p>
+                            <p class="productface pdescription">{{ product.description }}</p>
+                        </div>
+                        <div id="right" class="description">
+                            <p class="productface pprice">{{ product.price | currency }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newbox" ng-show="product.showingDetails">
+                    <div class="buynow">
+                        <div id="icondiv" class="right-align">
+                            <button class="btn-floating" ng-click="toggleDetails(product)"><i id="icon" class="material-icons">clear_all</i></button>
+                        </div> <br><br><br>
+                        <div class="valign-wrapper" style="text-align:center">
+                            <a id="buybtn" class="browser-default" ng-click="goToCheckout(product)" href="">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="selectdiv">
+                        <div>
+                            <div id="left" style="margin-left: 12px;">
+                                <p class="productface ptitle">{{ product.title }}</p>
+                                <p class="productface pdescription" style="margin-top:2px;">{{ product.description }}</p>
+                            </div>
+                            <div id="right" class="description">
+                                <p class="productface pprice" style="margin-top: 25px;">{{ product.price | currency }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 circles" style="padding: 10px;">
+                                <label>Size</label>
+                                <div class="input-field col m3 s6 center-align" style="padding: 0px; margin-top: 10px;">
+                                    <input name="group-{{ $index }}" type="radio" value="S" ng-model="product.size" id="radio-{{ $index }}-1" />
+                                    <label for="radio-{{ $index }}-1">S</label>
+                                </div>
+                                <div class="input-field col m3 s6 center-align" style="padding: 0px; margin-top: 10px;">
+                                    <input name="group-{{ $index }}" type="radio" value="M" ng-model="product.size" id="radio-{{ $index }}-2" />
+                                    <label for="radio-{{ $index }}-2">M</label>
+                                </div>
+                                <div class="input-field col m3 s6 center-align" style="padding: 0px; margin-top: 10px;">
+                                    <input name="group-{{ $index }}" type="radio" value="L" ng-model="product.size" id="radio-{{ $index }}-3" />
+                                    <label for="radio-{{ $index }}-3">L</label>
+                                </div>
+                                <div class="input-field col m3 s6 center-align" style="padding: 0px; margin-top: 10px;">
+                                    <input name="group-{{ $index }}" type="radio" value="XL" ng-model="product.size" id="radio-{{ $index }}-4" />
+                                    <label for="radio-{{ $index }}-4">XL</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="qbox" style="margin-left: 5px;">
+                            <div class "quantity" style="margin-left: 10px; margin-top: -18px;">Quantity</div>
+                            <input id="quantity" type="number" min="0" style="margin-bottom: 10px:" ng-model="product.quantity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

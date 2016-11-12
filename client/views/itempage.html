@@ -1,0 +1,75 @@
+<br>
+<div class="container">
+	<div class=" card-content black-text">
+		<table class="checkouttable">
+			<thead>
+				<tr style="background-color: rgb(221, 221, 221);  font-weight: bold;">
+					<th data-field="image">Product</th>
+					<th data-field="id">Name</th>
+					<th data-field="name">Size</th>
+					<th data-field="price">Quantity</th>
+					<th data-field="price">Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="background-color: rgb(245, 245, 245);  font-weight: bold;">
+					<td id="ckimg" ng-style="{'background-image':'url(' + product.imageurl + ')'}"></td>
+					<td>{{ product.title }}</td>
+					<td>{{ checkoutItem.size }}</td>
+					<td>{{ checkoutItem.quantity }}</td>
+					<td>{{ product.price * checkoutItem.quantity | currency }}</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td style="background-color: lightgray;  font-weight: bold;">Sales tax:</td>
+					<td style="background-color: gray; color: white; font-weight: bold;">{{ product.price * .10 | currency }}</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td style="background-color: lightblue;  font-weight: bold;">Total:</td>
+					<td style="background-color: #4DD0E1;  font-weight: bold;">{{ product.price * .10 + product.price * checkoutItem.quantity | currency }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<button id="continueshopping" class="cyan waves-effect" style="height:50px;" >
+		<a  id="continueshopping" ng-href="/products" >Continue shopping</a>
+		</button>
+	</div>
+	<div id="ccreveal">
+		<div class="card">
+			<div class="card-image waves-effect waves-block waves-light center-align ccdetails" style="background-color: #443d33;color: #fafafa;font-weight: bold;z-index: 0;">
+				<p>CHECKOUT DETAILS</p>
+				<h6> If you are ready to pay for shipping and handling, click the checkout button.</h6>
+				<p>THANKS FOR SHOPPING WITH DEPOT/U!</p>
+			</div>
+			<div  style="z-index:0;" class="card-content center-align  waves-effect waves-block waves-light teal lighten-1 ccinfo">
+				<button class="card-title activator grey-text text-darken-4 " style="background-color: #039be5; z-index:0;">Pay now</button>
+			</div>
+			<div class="card-reveal" style="z-index:0;">
+				<span class="card-title grey-text text-darken-4 center-align btn">Credit card info.<i class="material-icons right">close</i></span>
+				<div class="center-align">
+					<label> Email </label>
+					<input class="center-align" type="email" ng-model="email" placeholder="email" required>
+					<label>Credit card number</label>
+					<input class="center-align" type="text" ng-model="cardNumber" placeholder="Card Number" required>
+					<label>Expiration Month</label>
+					<input class="center-align" type="text" ng-model="expMonth" placeholder="Expiration Month" required>
+					<label>CVC</label>
+					<input class="center-align" type="text" ng-model="cvc" placeholder="CVC" required>
+					<label>Expiration Year</label>
+					<input class="center-align" type="text" ng-model="expYear" placeholder="Expiration Year" required>
+					<label> Amount to be charged</label><br><br>
+					<input style="color:red;" class="center-align" type="number" value="{{ product.price * .10 + product.price * checkoutItem.quantity }}" ng-model="amount"
+									placeholder="amount" disabled>
+					<button class="waves-effect waves-light btn deep-orange accent-3  " ng-click="chargeCard()">Purchase</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

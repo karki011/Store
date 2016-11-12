@@ -1,0 +1,36 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "### Due: Monday, October 31, 2016",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "source .variables && nodemon",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DepotU/fs-fall16-g1-the-io-group.git"
+  },
+  "author": "the-IO-group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DepotU/fs-fall16-g1-the-io-group/issues"
+  },
+  "homepage": "https://github.com/DepotU/fs-fall16-g1-the-io-group#readme",
+  "dependencies": {
+    "angular-card": "^0.3.7",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "card": "^2.0.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-mysql-session": "^1.2.0",
+    "express-session": "^1.14.1",
+    "mysql": "^2.11.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "prerender-node": "^2.4.0",
+    "sendgrid": "^4.7.0",
+    "stripe": "^4.12.0"
+  }
+}

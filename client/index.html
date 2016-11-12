@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html ng-app="OnlineStore">
+
+<head>
+	<base href="/">
+	<meta charset="utf-8">
+	<meta name="fragment" content="!">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,width=device-width">
+	<title> {{ seo.title }}</title>
+	<meta property="og:title" content="{{ seo.title }}">
+	<meta property="twitter:title" content="{{seo.title}}">
+	<meta property="og:image" content="{{ seo.image }}">
+	<meta property="twitter:image" content="{{seo.image}}">
+	<meta property="og:url" content="{{ seo.url }}">
+	<meta property="twitter:url" content="{{ seo.url }}">
+	<meta property="description" content="{{seo.description }}">
+	<meta property="og:description" content="{{ seo.description }}">
+	<meta property="twitter:description" content="{{ seo.description }}">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="singleitem.css">
+	<link rel="stylesheet" href="sidenavbar.css">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.js"></script>
+	<script src="controllers.js"></script>
+	<script src="services.js"></script>
+	<script src="factories.js"></script>
+	<script src="app.js"></script>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/2cols.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/4cols.css" media="all">
+	<link rel="stylesheet" href="css/5cols.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/7cols.css" media="all">
+	<link rel="stylesheet" href="css/8cols.css" media="all">
+	<link rel="stylesheet" href="css/9cols.css" media="all">
+	<link rel="stylesheet" href="css/10cols.css" media="all">
+	<link rel="stylesheet" href="css/11cols.css" media="all">
+	<link rel="stylesheet" href="css/12cols.css" media="all">
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+	<nav>
+		<div id="navBar" class="nav-wrapper  cyan lighten-2">
+			<a href="/" class="brand-logo">
+				<img style="display: inline-block; height: 71px; margin-left: 46px; margin-top:5px;" src="/assets/images/logo.svg" alt="TheOnlineStore">
+			</a>
+			<ul class="hide-on-med-and-down navlist">
+				<li><a id="navproduct" href="/products">Products</a></li>
+				<li><a id="navaccess" href="/products">Accessories</a></li>
+			</ul>
+			<ul class="right hide-on-med-and-down">
+				<li><a id="navcontact" href="/contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<a class="modal-trigger  sidenavbar" href="#modal1"><i class="large material-icons">menu</i></a>
+	<div id="modal1" class="modal bottom-sheet">
+		<div class="modal-content">
+			<a href="/">Home</a><br><br>
+			<a href="/products">Products</a><br><br>
+			<a href="/products">Accessories</a><br>	<br>
+			<a href="/contact">Contact</a><br><br>
+			
+		</div>
+	</div>
+	<div ng-view></div>
+	<footer class="page-footer black">
+		<div class="container center-align">
+			<img id="face" ng-src="/assets/images/face.png">
+			<a href="/">
+				<img id="footimage" ng-src="/assets/images/logo-white.svg" />
+			</a>
+			<img id="insta" ng-src="/assets/images/insta.png">
+			<img id="link" ng-src="/assets/images/link.png">
+		</div>
+	</footer>
+	<script>
+    $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  	}); 
+	</script>
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	<script type="text/javascript">
+		Stripe.setPublishableKey('pk_test_DKR8bWh8kLr5qtTJuxJpFABf');
+</script>
+</body>
+
+</html>
