@@ -1,6 +1,4 @@
-# g1 - Depot/U Online Store
 
-### Due: Monday, October 31, 2016
 
 ### Info
 * On Monday, you will receive mockups produced by a graphic designer
