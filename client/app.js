@@ -21,6 +21,7 @@ angular.module('OnlineStore', ['ngResource', 'ngRoute', 'OnlineStore.controllers
         })
         .when('/checkout', {
             templateUrl: 'views/checkout.html'
+        
         })
         .otherwise({
             redirectTo: '/'
